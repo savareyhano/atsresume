@@ -40,7 +40,7 @@ const DefaultResumeData = {
     {
       "company": "Reilty Group",
       "position": "Front End Web Developer",
-      "description": "Reilty Group is an industry-leading provider of online gambling software and solutions.",
+      "description": "Reilty Group is an industry-leading provider of online software and solutions.",
       "keyAchievements": "Increased by 35% the reach of users to the platform, over the installation of the web platform in mobile devices.\nDelivered 30 web solutions.\nReplaced 1 full-time web developer under part-time employment achieving a productivity gain of over 60% as measured by working hours.\nWorked with more than 4 different teams at different points of time and provided end-to-end solutions for clients.",
       "startYear": "2023-02-22",
       "endYear": "2023-03-09"

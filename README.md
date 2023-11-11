@@ -4,12 +4,12 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Demo
 
-#### [https://atsresume.vercel.app/](https://atsresume.vercel.app/)
-![image](https://user-images.githubusercontent.com/61316762/218017511-fbbaa7da-6154-449f-9e46-8de45b0e6c29.png)
+#### [https://savareyhano.github.io/atsresume/](https://savareyhano.github.io/atsresume/)
+![image](https://user-images.githubusercontent.com/32730327/273453332-c8241b46-baab-4b04-ac17-ba2aa8f8ebb2.png)
 
 ### Resume Score
 #### https://www.resumego.net/resume-checker/
-![image](https://user-images.githubusercontent.com/61316762/218143206-f0e5e764-52bc-4c25-84f2-6b2fff00cd4b.png)
+![image](https://user-images.githubusercontent.com/32730327/273453345-cb092bbb-3ccd-4885-b5f6-427b332e1035.png)
 
 ## Change Log
 
@@ -105,7 +105,7 @@ Key achievements are the most important part of your resume.
 
 ![image](https://user-images.githubusercontent.com/61316762/218244257-e85172dc-46bd-4f4b-b9c2-9bd17c693cc8.png)
 
-![image](https://user-images.githubusercontent.com/61316762/218244267-c46f5d02-b742-4b4c-ba7e-ae1bfb1e04d4.png)
+![image](https://user-images.githubusercontent.com/32730327/273453780-c0197b6a-24fd-4d58-a3c4-846f73716e05.png)
 
 ## License
 

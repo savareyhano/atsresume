@@ -65,7 +65,7 @@ const WorkExperience = () => {
             name="description"
             className="w-full other-input h-32"
             value={workExperience.description}
-            maxLength="250"
+            // maxLength="250"
             onChange={(e) => handleWorkExperience(e, index)}
           />
           <textarea

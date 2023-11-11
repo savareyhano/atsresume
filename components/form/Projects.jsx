@@ -62,7 +62,7 @@ const Projects = () => {
             name="description"
             className="w-full other-input h-32"
             value={project.description}
-            maxLength="250"
+            // maxLength="250"
             onChange={(e) => handleProjects(e, index)}
           />
           <textarea

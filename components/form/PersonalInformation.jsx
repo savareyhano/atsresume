@@ -32,7 +32,7 @@ const PersonalInformation = ({}) => {
           value={resumeData.contactInformation}
           onChange={handleChange}
           minLength="10"
-          maxLength="15"
+          // maxLength="15"
         />
         <input
           type="email"

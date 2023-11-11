@@ -13,6 +13,7 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Change Log
 
+- Removed form maxLength limit.
 - All section names are now editable.
 
 ## Sections

@@ -13,21 +13,33 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Change Log
 
-- Drag and drop sections to reorder them in the resume(Work Experience, Projects, Skills)
+- All section names are now editable.
 
 ## Sections
 
-- [Personal Information](#personal-information)
-- [Social Media](#social-media)
-- [Summary](#summary)
-- [Education](#education)
-- [Work Experience](#work-experience)
-- [Projects](#projects)
-- [Technical Skills](#technical-skills)
-- [Soft Skills](#soft-skills)
-- [Languages](#languages)
-- [Additional Skills](#additional-skills)
-- [Certifications](#certifications)
+- [ATSResume](#atsresume)
+  - [Demo](#demo)
+      - [https://savareyhano.github.io/atsresume/](#httpssavareyhanogithubioatsresume)
+    - [Resume Score](#resume-score)
+      - [https://www.resumego.net/resume-checker/](#httpswwwresumegonetresume-checker)
+  - [Change Log](#change-log)
+  - [Sections](#sections)
+  - [Personal Information](#personal-information)
+  - [Social Media](#social-media)
+  - [Summary](#summary)
+  - [Education](#education)
+  - [Work Experience](#work-experience)
+  - [Projects](#projects)
+  - [Technical Skills](#technical-skills)
+  - [Soft Skills](#soft-skills)
+  - [Languages](#languages)
+  - [Additional Skills](#additional-skills)
+  - [Certifications](#certifications)
+  - [How to Add Key Achievements](#how-to-add-key-achievements)
+  - [PageSpeed Insights](#pagespeed-insights)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Authors and acknowledgment](#authors-and-acknowledgment)
 
 ## Personal Information
 

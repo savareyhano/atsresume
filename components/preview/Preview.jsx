@@ -167,7 +167,10 @@ const Preview = () => {
             <div className="col-span-1 space-y-2">
               {resumeData.summary.length > 0 && (
                 <div className="mb-1">
-                  <h2 className="section-title mb-1 border-b-2 border-gray-300">
+                  <h2 className="section-title mb-1 border-b-2 border-gray-300 editable"
+                    contentEditable
+                    suppressContentEditableWarning
+                  >
                     Summary
                   </h2>
                   <p className="content">{resumeData.summary}</p>
@@ -176,7 +179,10 @@ const Preview = () => {
               <div>
                 {resumeData.education.length > 0 && (
                   <div className="mb-1">
-                    <h2 className="section-title mb-1 border-b-2 border-gray-300">
+                    <h2 className="section-title mb-1 border-b-2 border-gray-300 editable"
+                      contentEditable
+                      suppressContentEditableWarning
+                    >
                       Education
                     </h2>
                     {resumeData.education.map((item, index) => (

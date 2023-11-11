@@ -18,7 +18,7 @@ const Skills = ({ title, skills }) => {
         </h2>
         <p className="sub-content">
           {skills.map((skill, index) => (
-            <span key={index}>
+            <span className="break-words" key={index}>
               {skill}
               {index < skills.length - 1 && ', '}
             </span>

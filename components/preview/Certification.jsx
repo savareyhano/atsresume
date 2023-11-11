@@ -9,7 +9,7 @@ const Certification = ({ title, certifications }) => {
         >{title}</h2>
         <ul className="sub-content list-disc ul-padding">
             {certifications.map((certification, index) => (
-                <li key={index}>{certification}</li>
+                <li className="break-words" key={index}>{certification}</li>
             ))}
         </ul>
       </div>

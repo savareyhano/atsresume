@@ -174,7 +174,7 @@ const Preview = () => {
                   >
                     Summary
                   </h2>
-                  <p className="content">{convertMarkdownToHtml(resumeData.summary)}</p>
+                  <p className="content break-words">{convertMarkdownToHtml(resumeData.summary)}</p>
                 </div>
               )}
               <div>
@@ -188,9 +188,9 @@ const Preview = () => {
                     </h2>
                     {resumeData.education.map((item, index) => (
                       <div key={index} className="mb-1">
-                        <p className="content i-bold">{convertMarkdownToHtml(item.school)}</p>
-                        <p className="content">{convertMarkdownToHtml(item.degree)}</p>
-                        <p className="content">{convertMarkdownToHtml(item.gpa)}</p>
+                        <p className="content i-bold break-words">{convertMarkdownToHtml(item.school)}</p>
+                        <p className="content break-words">{convertMarkdownToHtml(item.degree)}</p>
+                        <p className="content break-words">{convertMarkdownToHtml(item.gpa)}</p>
                         <DateRange
                           startYear={item.startYear}
                           endYear={item.endYear}
@@ -263,14 +263,14 @@ const Preview = () => {
                                 "outline-dashed outline-2 outline-gray-400 bg-white"
                               }`}
                             >
-                              <p className="content i-bold">{convertMarkdownToHtml(item.company)}</p>
-                              <p className="content">{convertMarkdownToHtml(item.position)}</p>
+                              <p className="content i-bold break-words">{convertMarkdownToHtml(item.company)}</p>
+                              <p className="content break-words">{convertMarkdownToHtml(item.position)}</p>
                               <DateRange
                                 startYear={item.startYear}
                                 endYear={item.endYear}
                                 id={`work-experience-start-end-date`}
                               />
-                              <p className="content">{convertMarkdownToHtml(item.description)}</p>
+                              <p className="content break-words">{convertMarkdownToHtml(item.description)}</p>
                               <Droppable
                                 droppableId={`WORK_EXPERIENCE_KEY_ACHIEVEMENT-${index}`}
                                 type="WORK_EXPERIENCE_KEY_ACHIEVEMENT"
@@ -296,7 +296,7 @@ const Preview = () => {
                                                 {...provided.draggableProps}
                                                 {...provided.dragHandleProps}
                                                 className={`
-                                          hover:outline-dashed hover:outline-2 hover:outline-gray-400
+                                          hover:outline-dashed hover:outline-2 hover:outline-gray-400 break-words
                                           ${
                                             snapshot.isDragging &&
                                             "outline-dashed outline-2 outline-gray-400 bg-white"
@@ -347,7 +347,7 @@ const Preview = () => {
                                 "outline-dashed outline-2 outline-gray-400 bg-white"
                               }`}
                             >
-                              <p className="content i-bold">{convertMarkdownToHtml(item.name)}</p>
+                              <p className="content i-bold break-words">{convertMarkdownToHtml(item.name)}</p>
                               <DateRange
                                 startYear={item.startYear}
                                 endYear={item.endYear}
@@ -357,11 +357,11 @@ const Preview = () => {
                                 href={item.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="content"
+                                className="content break-words"
                               >
                                 {convertMarkdownToHtml(item.link)}
                               </Link>
-                              <p className="content">{convertMarkdownToHtml(item.description)}</p>
+                              <p className="content break-words">{convertMarkdownToHtml(item.description)}</p>
                               <Droppable
                                 droppableId={`PROJECTS_KEY_ACHIEVEMENT-${index}`}
                                 type="PROJECTS_KEY_ACHIEVEMENT"

@@ -10,7 +10,7 @@ const Language = ({ title, languages }) => {
         </h2>
         <p className="sub-content">
           {languages.map((language, index) => (
-            <span key={index}>
+            <span className="break-words" key={index}>
               {language}
               {index < languages.length - 1 && ', '}
             </span>

@@ -13,6 +13,8 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Change Log
 
+- Now support markdown syntax like bold and italic, You can find [basic markdown syntax here](https://www.markdownguide.org/basic-syntax/).
+- Added "GPA" field in the Education section.
 - Removed form maxLength limit.
 - All section names are now editable.
 

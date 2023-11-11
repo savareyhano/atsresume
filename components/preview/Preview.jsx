@@ -10,6 +10,7 @@ import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
 import Skills from "./Skills";
 import DateRange from "../utility/DateRange";
+import { convertMarkdownToHtml } from '../utility/MarkdownUtils';
 import ContactInfo from "./ContactInfo";
 import Image from "next/image";
 import Link from "next/link";
@@ -126,14 +127,14 @@ const Preview = () => {
                 />
               </div>
             )}
-            <h1 className="name">{resumeData.name}</h1>
-            <p className="profession">{resumeData.position}</p>
+            <h1 className="name">{convertMarkdownToHtml(resumeData.name)}</h1>
+            <p className="profession">{convertMarkdownToHtml(resumeData.position)}</p>
             <ContactInfo
               mainclass="flex flex-row gap-1 mb-1 contact"
               linkclass="inline-flex items-center gap-1"
-              teldata={resumeData.contactInformation}
-              emaildata={resumeData.email}
-              addressdata={resumeData.address}
+              teldata={convertMarkdownToHtml(resumeData.contactInformation)}
+              emaildata={convertMarkdownToHtml(resumeData.email)}
+              addressdata={convertMarkdownToHtml(resumeData.address)}
               telicon={<MdPhone />}
               emailicon={<MdEmail />}
               addressicon={<MdLocationOn />}
@@ -155,7 +156,7 @@ const Preview = () => {
                         return <span key={index}>{icon.icon}</span>;
                       }
                     })}
-                    {socialMedia.link}
+                    {convertMarkdownToHtml(socialMedia.link)}
                   </a>
                 );
               })}
@@ -173,7 +174,7 @@ const Preview = () => {
                   >
                     Summary
                   </h2>
-                  <p className="content">{resumeData.summary}</p>
+                  <p className="content">{convertMarkdownToHtml(resumeData.summary)}</p>
                 </div>
               )}
               <div>
@@ -187,8 +188,9 @@ const Preview = () => {
                     </h2>
                     {resumeData.education.map((item, index) => (
                       <div key={index} className="mb-1">
-                        <p className="content i-bold">{item.degree}</p>
-                        <p className="content">{item.school}</p>
+                        <p className="content i-bold">{convertMarkdownToHtml(item.school)}</p>
+                        <p className="content">{convertMarkdownToHtml(item.degree)}</p>
+                        <p className="content">{convertMarkdownToHtml(item.gpa)}</p>
                         <DateRange
                           startYear={item.startYear}
                           endYear={item.endYear}
@@ -218,7 +220,7 @@ const Preview = () => {
                               "outline-dashed outline-2 outline-gray-400 bg-white"
                             }`}
                           >
-                            <Skills title={skill.title} skills={skill.skills} />
+                            <Skills title={skill.title} skills={skill.skills.map(skill => convertMarkdownToHtml(skill))} />
                           </div>
                         )}
                       </Draggable>
@@ -227,10 +229,10 @@ const Preview = () => {
                   </div>
                 )}
               </Droppable>
-              <Language title="Languages" languages={resumeData.languages} />
+              <Language title="Languages" languages={resumeData.languages.map(language => convertMarkdownToHtml(language))} />
               <Certification
                 title="Certifications"
-                certifications={resumeData.certifications}
+                certifications={resumeData.certifications.map(certification => convertMarkdownToHtml(certification))}
               />
             </div>
             <div className="col-span-2 space-y-2">
@@ -261,14 +263,14 @@ const Preview = () => {
                                 "outline-dashed outline-2 outline-gray-400 bg-white"
                               }`}
                             >
-                              <p className="content i-bold">{item.company}</p>
-                              <p className="content">{item.position}</p>
+                              <p className="content i-bold">{convertMarkdownToHtml(item.company)}</p>
+                              <p className="content">{convertMarkdownToHtml(item.position)}</p>
                               <DateRange
                                 startYear={item.startYear}
                                 endYear={item.endYear}
                                 id={`work-experience-start-end-date`}
                               />
-                              <p className="content">{item.description}</p>
+                              <p className="content">{convertMarkdownToHtml(item.description)}</p>
                               <Droppable
                                 droppableId={`WORK_EXPERIENCE_KEY_ACHIEVEMENT-${index}`}
                                 type="WORK_EXPERIENCE_KEY_ACHIEVEMENT"
@@ -300,7 +302,7 @@ const Preview = () => {
                                             "outline-dashed outline-2 outline-gray-400 bg-white"
                                           }`}
                                               >
-                                                {achievement}
+                                                {convertMarkdownToHtml(achievement)}
                                               </li>
                                             )}
                                           </Draggable>
@@ -345,7 +347,7 @@ const Preview = () => {
                                 "outline-dashed outline-2 outline-gray-400 bg-white"
                               }`}
                             >
-                              <p className="content i-bold">{item.name}</p>
+                              <p className="content i-bold">{convertMarkdownToHtml(item.name)}</p>
                               <DateRange
                                 startYear={item.startYear}
                                 endYear={item.endYear}
@@ -357,9 +359,9 @@ const Preview = () => {
                                 rel="noopener noreferrer"
                                 className="content"
                               >
-                                {item.link}
+                                {convertMarkdownToHtml(item.link)}
                               </Link>
-                              <p className="content">{item.description}</p>
+                              <p className="content">{convertMarkdownToHtml(item.description)}</p>
                               <Droppable
                                 droppableId={`PROJECTS_KEY_ACHIEVEMENT-${index}`}
                                 type="PROJECTS_KEY_ACHIEVEMENT"
@@ -391,7 +393,7 @@ const Preview = () => {
                                             "outline-dashed outline-2 outline-gray-400 bg-white"
                                           }`}
                                               >
-                                                {achievement}
+                                                {convertMarkdownToHtml(achievement)}
                                               </li>
                                             )}
                                           </Draggable>

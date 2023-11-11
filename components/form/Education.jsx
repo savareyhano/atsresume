@@ -16,7 +16,7 @@ const Education = () => {
         ...resumeData,
         education: [
           ...resumeData.education,
-          { school: "", degree: "", startYear: "", endYear: "" },
+          { school: "", degree: "", gpa: "", startYear: "", endYear: "" },
         ],
       });
     };
@@ -46,6 +46,13 @@ const Education = () => {
               name="degree"
               className="w-full other-input"
               value={education.degree}
+              onChange={(e) => handleEducation(e, index)} />
+            <input
+              type="text"
+              placeholder="GPA"
+              name="gpa"
+              className="w-full other-input"
+              value={education.gpa}
               onChange={(e) => handleEducation(e, index)} />
             <div className="flex-wrap-gap-2">
               <input

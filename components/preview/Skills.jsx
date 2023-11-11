@@ -16,7 +16,14 @@ const Skills = ({ title, skills }) => {
         <h2 className="section-title mb-1 border-b-2 border-gray-300 editable" contentEditable suppressContentEditableWarning onBlur={handleTitleChange}>
           {title}
         </h2>
-        <p className="sub-content">{skills.join(", ")}</p>
+        <p className="sub-content">
+          {skills.map((skill, index) => (
+            <span key={index}>
+              {skill}
+              {index < skills.length - 1 && ', '}
+            </span>
+          ))}
+        </p>
       </>
     )
   );

@@ -22,8 +22,9 @@ const DefaultResumeData = {
   summary: "Resourceful Developer with 11 years of experience in designing and developing user interfaces, testing and training employees. Skilled at utilizing a wide variety of tools and programs to provide effective applications.",
   education: [
     {
-      "school": "Bachelor of Computer Science",
-      "degree": "New York University",
+      "school": "New York University",
+      "degree": "Bachelor of Computer Science",
+      "gpa": "GPA: 3.7",
       "startYear": "2020-08-20",
       "endYear": "2024-07-01"
     },

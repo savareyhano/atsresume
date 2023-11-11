@@ -8,7 +8,14 @@ const Language = ({ title, languages }) => {
         >
           {title}
         </h2>
-        <p className="sub-content">{languages.join(", ")}</p>
+        <p className="sub-content">
+          {languages.map((language, index) => (
+            <span key={index}>
+              {language}
+              {index < languages.length - 1 && ', '}
+            </span>
+          ))}
+        </p>
       </div>
     )
   );

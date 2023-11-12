@@ -13,6 +13,7 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Change Log
 
+- Bullet point in Key Achievements will now be rendered only if there's a value inside, thus preventing an empty bullet point.
 - Now support markdown syntax like bold and italic, You can find [basic markdown syntax here](https://www.markdownguide.org/basic-syntax/).
 - Added "GPA" field in the Education section.
 - Removed form maxLength limit.

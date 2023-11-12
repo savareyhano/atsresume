@@ -285,27 +285,31 @@ const Preview = () => {
                                       item.keyAchievements
                                         .split("\n")
                                         .map((achievement, subIndex) => (
-                                          <Draggable
-                                            key={`${item.company}-${index}-${subIndex}`}
-                                            draggableId={`WORK_EXPERIENCE_KEY_ACHIEVEMENT-${index}-${subIndex}`}
-                                            index={subIndex}
-                                          >
-                                            {(provided, snapshot) => (
-                                              <li
-                                                ref={provided.innerRef}
-                                                {...provided.draggableProps}
-                                                {...provided.dragHandleProps}
-                                                className={`
-                                          hover:outline-dashed hover:outline-2 hover:outline-gray-400 break-words
-                                          ${
-                                            snapshot.isDragging &&
-                                            "outline-dashed outline-2 outline-gray-400 bg-white"
-                                          }`}
-                                              >
-                                                {convertMarkdownToHtml(achievement)}
-                                              </li>
-                                            )}
-                                          </Draggable>
+                                          // Trims 'achievement' strings from 'item.keyAchievements' and checks if not empty, skipping rendering of empty bullet points. 
+                                          // The .trim() method is used to remove leading and trailing white spaces from the 'achievement' strings, ensuring that they are not just white spaces or empty strings.
+                                          achievement.trim() !== "" && (
+                                            <Draggable
+                                              key={`${item.company}-${index}-${subIndex}`}
+                                              draggableId={`WORK_EXPERIENCE_KEY_ACHIEVEMENT-${index}-${subIndex}`}
+                                              index={subIndex}
+                                            >
+                                              {(provided, snapshot) => (
+                                                <li
+                                                  ref={provided.innerRef}
+                                                  {...provided.draggableProps}
+                                                  {...provided.dragHandleProps}
+                                                  className={`
+                                            hover:outline-dashed hover:outline-2 hover:outline-gray-400 break-words
+                                            ${
+                                              snapshot.isDragging &&
+                                              "outline-dashed outline-2 outline-gray-400 bg-white"
+                                            }`}
+                                                >
+                                                  {convertMarkdownToHtml(achievement)}
+                                                </li>
+                                              )}
+                                            </Draggable>
+                                          )
                                         ))}
                                     {provided.placeholder}
                                   </ul>
@@ -376,27 +380,31 @@ const Preview = () => {
                                       item.keyAchievements
                                         .split("\n")
                                         .map((achievement, subIndex) => (
-                                          <Draggable
-                                            key={`${item.name}-${index}-${subIndex}`}
-                                            draggableId={`PROJECTS_KEY_ACHIEVEMENT-${index}-${subIndex}`}
-                                            index={subIndex}
-                                          >
-                                            {(provided, snapshot) => (
-                                              <li
-                                                ref={provided.innerRef}
-                                                {...provided.draggableProps}
-                                                {...provided.dragHandleProps}
-                                                className={`
-                                          hover:outline-dashed hover:outline-2 hover:outline-gray-400
-                                          ${
-                                            snapshot.isDragging &&
-                                            "outline-dashed outline-2 outline-gray-400 bg-white"
-                                          }`}
-                                              >
-                                                {convertMarkdownToHtml(achievement)}
-                                              </li>
-                                            )}
-                                          </Draggable>
+                                          // Trims 'achievement' strings from 'item.keyAchievements' and checks if not empty, skipping rendering of empty bullet points. 
+                                          // The .trim() method is used to remove leading and trailing white spaces from the 'achievement' strings, ensuring that they are not just white spaces or empty strings.
+                                          achievement.trim() !== "" && (
+                                            <Draggable
+                                              key={`${item.name}-${index}-${subIndex}`}
+                                              draggableId={`PROJECTS_KEY_ACHIEVEMENT-${index}-${subIndex}`}
+                                              index={subIndex}
+                                            >
+                                              {(provided, snapshot) => (
+                                                <li
+                                                  ref={provided.innerRef}
+                                                  {...provided.draggableProps}
+                                                  {...provided.dragHandleProps}
+                                                  className={`
+                                            hover:outline-dashed hover:outline-2 hover:outline-gray-400
+                                            ${
+                                              snapshot.isDragging &&
+                                              "outline-dashed outline-2 outline-gray-400 bg-white"
+                                            }`}
+                                                >
+                                                  {convertMarkdownToHtml(achievement)}
+                                                </li>
+                                              )}
+                                            </Draggable>
+                                          )
                                         ))}
                                     {provided.placeholder}
                                   </ul>

@@ -13,7 +13,7 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Change Log
 
-- Fixed text overflowing from its container.
+- Text overflowing its container is now fixed.
 - Bullet point in Key Achievements will now be rendered only if there's a value inside, thus preventing an empty bullet point.
 - Now support markdown syntax like bold and italic, You can find [basic markdown syntax here](https://www.markdownguide.org/basic-syntax/).
 - Added "GPA" field in the Education section.
@@ -22,29 +22,17 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Sections
 
-- [ATSResume](#atsresume)
-  - [Demo](#demo)
-      - [https://savareyhano.github.io/atsresume/](#httpssavareyhanogithubioatsresume)
-    - [Resume Score](#resume-score)
-      - [https://www.resumego.net/resume-checker/](#httpswwwresumegonetresume-checker)
-  - [Change Log](#change-log)
-  - [Sections](#sections)
-  - [Personal Information](#personal-information)
-  - [Social Media](#social-media)
-  - [Summary](#summary)
-  - [Education](#education)
-  - [Work Experience](#work-experience)
-  - [Projects](#projects)
-  - [Technical Skills](#technical-skills)
-  - [Soft Skills](#soft-skills)
-  - [Languages](#languages)
-  - [Additional Skills](#additional-skills)
-  - [Certifications](#certifications)
-  - [How to Add Key Achievements](#how-to-add-key-achievements)
-  - [PageSpeed Insights](#pagespeed-insights)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Authors and acknowledgment](#authors-and-acknowledgment)
+- [Personal Information](#personal-information)
+- [Social Media](#social-media)
+- [Summary](#summary)
+- [Education](#education)
+- [Work Experience](#work-experience)
+- [Projects](#projects)
+- [Technical Skills](#technical-skills)
+- [Soft Skills](#soft-skills)
+- [Languages](#languages)
+- [Additional Skills](#additional-skills)
+- [Certifications](#certifications)
 
 ## Personal Information
 
@@ -64,8 +52,9 @@ A cutting-edge resume builder that helps job seekers create a professional, ATS-
 
 ## Education
 
-- Degree
 - Institute
+- Degree
+- GPA
 - Start Date
 - End Date
 
